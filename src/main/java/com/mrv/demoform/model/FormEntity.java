@@ -1,4 +1,4 @@
-package com.mrv.model;
+package com.mrv.demoform.model;
 
 
 public class FormEntity {

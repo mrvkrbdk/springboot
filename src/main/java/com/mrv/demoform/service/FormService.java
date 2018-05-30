@@ -1,13 +1,13 @@
-package com.mrv.service;
+package com.mrv.demoform.service;
 
-import com.mrv.dao.FormDao;
-import com.mrv.model.FormEntity;
+import com.mrv.demoform.dao.FormDao;
+import com.mrv.demoform.model.FormEntity;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
+@Service
 public class FormService {
     @Autowired
-    @Qualifier("mysql")
     private FormDao formDao;
 
     public void addForm(FormEntity formEntity){

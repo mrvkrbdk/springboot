@@ -13,6 +13,6 @@
 <body>
 <h2>Kaydedildi</h2>
 
-<a href="index.jsp">Geri Don</a>
+<a href="/">Geri Don</a>
 </body>
 </html>
