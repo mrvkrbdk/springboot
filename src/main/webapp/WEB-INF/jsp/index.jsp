@@ -92,7 +92,7 @@
 
 <div class="container">
     <h3>BAYILIK ON BASVURU FORMU</h3>
-    <form method="get" modelAttribute="FormEntity" action="/process">
+    <form method="post" modelAttribute="FormEntity" action="/process">
         <div class="row">
             <div class="col-25">
                 <label path="name" for="lname">ISIM SOYISIM:</label>

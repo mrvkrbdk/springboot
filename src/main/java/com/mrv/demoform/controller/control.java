@@ -20,7 +20,7 @@ class control {
 
     @Autowired
     private FormService formService;
-    @RequestMapping(name = "/process",method = RequestMethod.GET)
+    @RequestMapping(name = "/process",method = RequestMethod.POST)
     public String addForm(@ModelAttribute FormEntity formEntity){
         formService.addForm(formEntity);
         return "success";
