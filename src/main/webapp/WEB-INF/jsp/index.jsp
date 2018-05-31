@@ -98,7 +98,7 @@
                 <label path="name" for="lname">ISIM SOYISIM:</label>
             </div>
             <div class="col-75">
-                <input path="name" type="text" id="lname" name="name" />
+                <input path="name" type="text" id="lname" name="name" required/>
             </div>
         </div>
         <div class="row">
@@ -106,7 +106,16 @@
                 <label path="tc" for="ltc">TC KIMLIK: </label>
             </div>
             <div class="col-75">
-                <input path="tc" type="text" id="ltc" name="tc" />
+                <input path="tc" type="text" pattern="\d{9}" title="Bu input’a sadece 9 karakterli sayısal değer girilebilir" id="ltc" name="tc"  required/>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label path="tel" for="ltel">TELEFON: </label>
+            </div>
+            <div class="col-75">
+                <input path="tel" type="text" pattern="\d{9}" id="ltel" name="tel" placeholder="or:055555555" title="Bu input’a sadece 9 karakterli sayısal değer girilebilir" required/>
             </div>
         </div>
         <div class="row">
@@ -114,15 +123,7 @@
                 <label path="adres" for="ladres">ADRES:  </label>
             </div>
             <div class="col-75">
-                <input path="adres" type="text" id="ladres" name="adres" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-25">
-                <label path="tel" for="ltel">TELEFON: </label>
-            </div>
-            <div class="col-75">
-                <input path="tel" type="text" id="ltel" name="tel" placeholder="or:05555555555"/>
+                <input path="adres" type="text" id="ladres" name="adres" required/>
             </div>
         </div>
         <div class="row">
@@ -130,7 +131,7 @@
                 <label path="email" for="lemail">E- POSTA: </label>
             </div>
             <div class="col-75">
-                <input path="email" type="text" id="lemail" name="email" />
+                <input path="email" type="text" id="lemail" name="email" required/>
             </div>
         </div>
         <div class="row">
@@ -138,7 +139,7 @@
                 <label path="dt" for="ldt">DOGUM TARIHI: </label>
             </div>
             <div class="col-75">
-                <input path="dt" type="date" id="ldt" name="dt"  />
+                <input path="dt" type="date" id="ldt" name="dt" required />
             </div>
         </div>
         <div class="row">
@@ -168,8 +169,7 @@
                 <label path="il" for="lil">HANGI IL/ILCE/SEMT ICIN LOKUMCU BABA ISLETMECILIGI DUSUNUYORSUNUZ? </label>
             </div>
             <div class="col-75">
-                <select path="il"  id="lil" name="il" >
-
+                <select path="il"  id="lil" name="il" required >
                     <option >il1</option>
                     <option >il2</option>
                     <option >il3</option>
@@ -194,7 +194,7 @@
                 <label path="miktar" for="lmiktar">YATIRIM MIKTARINIZ NEDIR?  </label>
             </div>
             <div class="col-75">
-                <input path="miktar" type="text" id="lmiktar" name="miktar" />
+                <input path="miktar" type="text" pattern="\d*" id="lmiktar" name="miktar" required/>
             </div>
         </div>
 
@@ -203,7 +203,7 @@
                 <label path="ek" for="lek">EKLEMEK ISTEDIKLERINIZ: </label>
             </div>
             <div class="col-75">
-                <textarea path="ek" id="lek" name="ek" placeholder="Ek.." style="height:100px" ></textarea>
+                <textarea path="ek" id="lek" name="ek" placeholder="Ek.." style="height:100px" required></textarea>
             </div>
         </div>
         <div class="row">
